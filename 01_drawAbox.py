@@ -1,5 +1,3 @@
-
-
 # importing image object from PIL
 import random
 from PIL import Image, ImageDraw
@@ -11,11 +9,11 @@ from PIL import Image, ImageDraw
 for i in range(10):
     
     print(i)
-    img = Image.new("RGB", (500, 500), (random.randint(50, 255), random.randint(50, 255), random.randint(50, 255)))
+    img = Image.new("RGB", (1000, 1000), (random.randint(50, 255), random.randint(50, 255), random.randint(50, 255)))
 
 # create line image
 #img1 = ImageDraw.Draw(img)
 #img1.line(shape, fill ="red", width = 0)
 
 
-    img.save('boxes/'+str(i)+'500'+'.jpg')
+    img.save('boxes/'+str(i)+'_p'+'.jpg')
